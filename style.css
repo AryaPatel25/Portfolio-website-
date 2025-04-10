@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #f4d03f, #16a085);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.social-icons a {
+  margin-left: 1rem;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f4d03f;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.intro h1 {
+  font-size: 3rem;
+}
+
+.dot {
+  color: #f4d03f;
+}
+
+.description {
+  border-left: 2px solid #f4d03f;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projects li {
+  margin-bottom: 1.2rem;
+  padding-left: 1rem;
+  border-left: 2px solid #f4d03f;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.projects li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects li:hover {
+  transform: translateX(5px);
+  color: #f4d03f;
+}
+
+.resume-btn {
+  background-color: #f4d03f;
+  color: #0f0f0f;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.resume-preview {
+  width: 100%;
+  height: 500px;
+  border: 2px solid #f4d03f;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact a {
+  color: #f4d03f;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.corner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 4px solid transparent;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  border-top: 4px solid #f4d03f;
+  border-left: 4px solid #f4d03f;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #f4d03f;
+  border-right: 4px solid #f4d03f;
+}
+
+footer {
+  text-align: right;
+  margin-top: 3rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .resume-preview {
+    height: 400px;
+  }
+}
